@@ -1,4 +1,7 @@
 ﻿
+@{
+    Layout = null;
+}
 
 <!DOCTYPE html>
 
@@ -9,40 +12,29 @@
 </head>
 <body>
     <div>
-        @helper MyListHelper(string[] str)
-        {
-            if (str.Length == 0)
+        <h1>@ViewBag.MyCustomName</h1>
+    </div>
+    <div>
+        <ul>
+            @foreach (var item in ViewBag.MyList)
             {
-                <h2>NO DATA EXIST</h2>
+                <li>@item</li>
+
             }
-            else
+        </ul>
+    </div>
+    <div>
+        <ul>
+            @foreach (var item in ViewBag.MyEmpList)
             {
-                <ul>
-                    @foreach (var items in str)
-                    {
-                        <li>@items</li>
-                    }
-                </ul>
+               <li>
+                   Name -@item.Name
+                   Email-@item.Email
+                   Id-@item.Id
+               </li>
+
             }
-        }
-    </div>
-    <div>
-        <lable>Example 1 - Name List</lable>
-        <div>
-            @MyListHelper(new string[] { "Tom", "Harry", "John", "Mark" })
-        </div>
-    </div>
-    <div>
-        <lable>Example 2 - Progrmamming Language</lable>
-        <div>
-            @MyListHelper(new string[] { "C#", "Java", ".Net", "Python " })
-        </div>
-    </div>
-    <div>
-        <lable>Example 3 - Empty List</lable>
-        <div>
-            @MyListHelper(new string[] {  })
-        </div>
+        </ul>
     </div>
 </body>
 </html>

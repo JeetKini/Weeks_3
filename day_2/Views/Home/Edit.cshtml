@@ -1,0 +1,43 @@
+﻿@model WebApplication11.Models.Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <div>
+        @Html.DisplayName("Id")-@Html.Editor("Id")
+        <br />
+        <br />
+        <hr />
+        @Html.DisplayNameFor(x => x.Name)-@Html.EditorFor(x => x.Name)
+        <br />
+        <br />
+        <hr />
+        @Html.DisplayNameFor(x => x.DateOfBirth)-@Html.EditorFor(x => x.DateOfBirth)
+        <br />
+        <br />
+        <hr />
+        @Html.DisplayNameFor(x => x.Birth)-@Html.EditorFor(x => x.Birth)
+        <br />
+        <br />
+        <hr />
+        @Html.EditorForModel()
+        <br />
+        <br />
+        <hr />
+        @using (Html.BeginForm("My Form"))
+            {
+            @Html.EditorForModel()
+            <input type="submit" value="submit" />
+            }
+
+    </div>
+</body>
+</html>

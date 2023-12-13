@@ -1,0 +1,11 @@
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\bin\Debug\Review_Practice.exe.config
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\bin\Debug\Review_Practice.exe
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\bin\Debug\Review_Practice.pdb
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\obj\Debug\Review_Practice.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\obj\Debug\Review_Practice.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\obj\Debug\Review_Practice.exe
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\obj\Debug\Review_Practice.pdb
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\bin\Debug\ConsoleApp1.exe
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\bin\Debug\ConsoleApp1.pdb
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\bin\Debug\ConsoleApp1.exe.config
+C:\Users\hp\source\repos\Review_Practice\Review_Practice\obj\Debug\Review_Practice.csproj.CopyComplete

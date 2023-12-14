@@ -1,0 +1,29 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index12</title>
+</head>
+<body>
+    <div>
+        @{
+            List<string> l = new List<string>() { "Jeet", "Adnan", "Bilal", "Arjun", "Arif", "Sachin" };
+
+            foreach (var v in l)
+            {
+                <h1>@v</h1><br />
+            }
+        }
+
+    </div>
+    <div>
+        <a href="/Home/Index">Home 1</a>
+        <a href="/Home/Index12">Home 2</a>
+        <a href="/Home/Index13?a=1&s=abc">Home 3</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h1>
+        @*@Html.Raw(ViewBag.JK)
+        @ViewBag.JK*@ 
+        @ViewData["hey"]
+        </h1>
+    <h2>
+
+
+        @foreach(var i in (List<string>)ViewData["Hello"])
+            {
+                <li>@i</li>
+            }
+    </h2>
+    </div>
+</body>
+</html>

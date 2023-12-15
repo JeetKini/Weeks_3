@@ -1,0 +1,51 @@
+﻿@model Revision_WebApp.Models.Employee
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Store", "Home", FormMethod.Post))
+        {
+            <div>
+                @Html.TextBoxFor(x => x.Id)
+            </div>
+            <div>
+                @Html.TextBoxFor(x => x.Name)
+            </div>
+            <div>
+                @Html.TextBoxFor(x => x.Address)
+            </div>
+            <input type="submit" value="Submit" />
+            <div>
+                @Html.DisplayName("Name") -@Html.Editor("Name")   @*properties name*@
+                <hr />
+                @Html.DisplayText("Name")   @*properties value*@
+                <hr />
+                @*@Html.DisplayTextFor(x=>x.Id)*@
+                @Html.DisplayText("Id")-@Html.EditorFor(x => x.Id)
+                <hr />
+                @Html.DisplayForModel()
+            </div>
+            @Html.EditorFor(x => x.Id)
+            @Html.EditorFor(x => x.Name)
+            @Html.EditorFor(x=>x.Time)
+
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.EditorForModel()
+            <input type="submit" value="Submit" />
+        }
+    </div>
+
+
+        }
+    </div>
+</body>
+</html>
